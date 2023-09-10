@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- Charts  -->
+  <script src="src=" https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>"></script>
+  <title>Components / Badges - NiceAdmin Bootstrap Template</title>
+</head>
+
+<body>
+  <!-- ========  Header ================ -->
+  <header class="header container-fluid  d-flex align-items-center fixed-top">
+    <!--  logo -->
+
+    <div class="row logo">
+      <a class="navbar-brand d-flex align-items-center " href="#">
+        <img src="./images/logo.png" alt="" width="30" height="24" class="mt-1 me-2 d-inline-block align-text-top">
+        <span class="fw-bold fs-4 ms-2 d-none d-md-block ">NiceAdmin</span>
+      </a>
+    </div>
+    <div class="row"><i class="bi bi-list fa-2x toggle-sidebar-btn"></i>
+    </div>
+
+    <!-- logo end -->
+    <div class="search-bar search d-none d-md-block">
+      <form class="search-form d-flex align-items-center" method="POST" action="#">
+        <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+        <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+      </form>
+    </div><!-- End Search Bar -->
+
+    <!-- ==== Nav ==== -->
+    <nav class="header-nav navbar navbar-expand-lg navbar-light align-items-center ms-auto">
+
+      <div class=" collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto ">
+          <li class="nav-item d-block d-md-none me-3 me-md-3 ">
+            <a class="nav-link  nav-icon  dropdown-toggle" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-search"></i>
+            </a>
+          </li>
+          <!-- end Search icon -->
+          <li class="nav-item dropdown me-3 ">
+            <a class="nav-link  nav-icon" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="bi bi-bell"></i>
+              <span class=" badge bg-primary badge-number text-white  ">4</span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow position-absolute notifications ">
+              <li class="dropdown-header">
+                You have 4 new notifications
+                <a class="" href="#">
+                  <span class="badge rounded-pill bg-primary ms-2 p-2">View all</span>
+                </a>
+              </li>
+              <li class="">
+                <hr class="dropdown-divider">
+              </li>
+              <li class="notification-item">
+                <i class="bi bi-exclamation-circle text-warning"></i>
+                <div>
+                  <h4>Lorem ipsum</h4>
+                  <p>Quae dolorem earum veritatis oditseno</p>
+                  <p>30 min. age</p>
+
+                </div>
+              </li>
+              <li class="">
+                <hr class="dropdown-divider">
+              </li>
+              <li class="notification-item">
+                <i class="bi bi-x-circle text-danger"></i>
+                <div>
+                  <h4>Atque rerum nesciunt</h4>
+                  <p>Quae dolorem earum veritatis oditseno</p>
+                  <p>1 hr. ago</p>
+
+                </div>
+              </li>
+              <li class="">
+                <hr class="dropdown-divider">
+              </li>
+              <li class="notification-item">
+                <i class="bi bi-check-circle text-success"></i>
+                <div>
+                  <h4>Sit rerum fuga</h4>
+                  <p>Quae dolorem earum veritatis oditseno</p>
+                  <p>2 hrs. ago</p>
+
+                </div>
+              </li>
+              <li class="">
+                <hr class="dropdown-divider">
+              </li>
+              <li class="notification-item">
+                <i class="bi bi-info-circle text-primary"></i>
+                <div>
+                  <h4>Dicta reprehenderit</h4>
+                  <p>Quae dolorem earum veritatis oditseno</p>
+                  <p>4 hrs. ago</p>
+
+                </div>
+              </li>
+              <li class="">
+                <hr class="dropdown-divider">
+              </li>
+              <li class="dropdown-footer">
+                <a href="#">Show all notifications</a>
+              </li>
+            </ul>
+          </li>
+          <!-- end of notification -->
+
+          <!-- Start of messages menu -->
+          <li class="nav-item dropdown  me-3">
+            <a class="nav-link nav-icon" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="bi bi-chat-left-text"></i>
+              <span class="bg-success badge badge-number text-white">3</span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow position-absolute messages ">
+              <li class="dropdown-header">
+                You have 3 new messages
+                <a class="" href="#">
+                  <span class="badge rounded-pill bg-primary ms-2 p-2">View all</span>
+                </a>
+              </li>
+              <li class="">
+                <hr class="dropdown-divider">
+              </li>
+              <li class="message-item">
+                <img src="./images/messages-1.jpg" alt="" class="rounded-circle">
+
+                <div>
+                  <h4>Maria Hudson</h4>
+                  <p>Velit asperiores at ducimus soluta repudiandae labore office est ut...
+                  </p>
+                  <p>4 hrs. age</p>
+
+                </div>
+              </li>
+              <li class="">
+                <hr class="dropdown-divider">
+              </li>
+              <li class="message-item">
+                <img src="./images/messages-2.jpg" alt="" class="rounded-circle">
+
+                <div>
+                  <h4>Maria Hudson</h4>
+                  <p>Velit asperiores at ducimus soluta repudiandae labore office est ut...
+                  </p>
+                  <p>4 hrs. age</p>
+
+                </div>
+              </li>
+              <li class="">
+                <hr class="dropdown-divider">
+              </li>
+              <li class="message-item">
+                <img src="./images/messages-3.jpg" alt="" class="rounded-circle">
+
+                <div>
+                  <h4>Maria Hudson</h4>
+                  <p>Velit asperiores at ducimus soluta repudiandae labore office est ut...
+                  </p>
+                  <p>4 hrs. age</p>
+
+                </div>
+              </li>
+              <li class="">
+                <hr class="dropdown-divider">
+              </li>
+              <li class="dropdown-footer">
+                <a href="#">Show all messages</a>
+              </li>
+            </ul>
+          </li>
+          <!-- end of messages menu -->
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="./images/profile-img.jpg" class="rounded-circle" alt="">
+              <span class="d-none d-md-block dropdown-toggle ps-2">
+                M.Raees Khan
+              </span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow position-absolute profile ">
+              <li class="dropdown-header">
+                <h6>Raees Khan</h6>
+                <span>Web Designer</span>
+              </li>
+              <li class="">
+                <hr class="dropdown-divider">
+              </li>
+              <li>
+
+                <a href="profile.html" class="dropdown-item d-flex align-items-center">
+                  <i class="bi bi-person"></i>
+                  <span>My Profile</span>
+                </a>
+              </li>
+              <li class="">
+                <hr class="dropdown-divider">
+              </li>
+              <li>
+
+                <a href="profile.html" class="dropdown-item d-flex align-items-center">
+                  <i class="bi bi-gear"></i>
+                  <span> Account Settings</span>
+                </a>
+              </li>
+              <li class="">
+                <hr class="dropdown-divider">
+              </li>
+              <li>
+
+                <a href="#" class="dropdown-item d-flex align-items-center">
+                  <i class="bi bi-question-circle"></i>
+                  <span>Need Help?</span>
+                </a>
+              </li>
+              <li class="">
+                <hr class="dropdown-divider">
+              </li>
+              <li>
+
+                <a href="#" class="dropdown-item d-flex align-items-center">
+                  <i class="bi bi-box-arrow-right"></i>
+                  <span>Sign Out</span>
+                </a>
+              </li>
+            </ul>
+
+      </div>
+
+    </nav>
+
+
+  </header>
+  <!--  ========  End of Header =========== -->
+  <!--  ======== SideBar Start ============ -->
+  <aside id="sidebar" class="sidebar">
+    <ul class="sidebar-nav" id="sidebar">
+      <li class="nav-item mb-1">
+
+        <a href="./index.html" class="nav-link d-flex align-items-center">
+          <i class="bi bi-grid"></i>
+          <span>Dashboard</span>
+        </a>
+      </li>
+      <!-- End of Dashboard -->
+      <li class="nav-item mb-1">
+        <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-menu-button-wide"></i><span>Components</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="components-nav" class="nav-content collapse-nav " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="components-alerts.html">
+              <i class="bi bi-circle"></i><span>Alerts</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-accordion.html">
+              <i class="bi bi-circle"></i><span>Accordion</span>
+            </a>
+          </li>
+          <li>
+            <a href="./components-badges.html">
+              <i class="bi bi-circle"></i><span>Badges</span>
+            </a>
+          </li>
+          <li>
+            <a href="./components-breadcrumbs.html">
+              <i class="bi bi-circle"></i><span>Breadcrumbs</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-buttons.html">
+              <i class="bi bi-circle"></i><span>Buttons</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-cards.html">
+              <i class="bi bi-circle"></i><span>Cards</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-carousel.html">
+              <i class="bi bi-circle"></i><span>Carousel</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-list-group.html">
+              <i class="bi bi-circle"></i><span>List group</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-model.html">
+              <i class="bi bi-circle"></i><span>Modal</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-tabs.html">
+              <i class="bi bi-circle"></i><span>Tabs</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-pagination.html">
+              <i class="bi bi-circle"></i><span>Pagination</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-progress.html">
+              <i class="bi bi-circle"></i><span>Progress</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-spinner.html">
+              <i class="bi bi-circle"></i><span>Spinners</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-tooltip.html">
+              <i class="bi bi-circle"></i><span>Tooltips</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Components Nav -->
+      <li class="nav-item mb-1">
+        <a class="nav-link collapsed" data-bs-target="#form-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-journal-text"></i>
+          <span>Forms</span>
+          <i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="form-nav" class="nav-content collapse-nav " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="forms-elements.html">
+              <i class="bi bi-circle"></i><span>Form Elements</span>
+            </a>
+          </li>
+          <li>
+            <a href="forms-layout.html">
+              <i class="bi bi-circle"></i><span>Form Layouts</span>
+            </a>
+          </li>
+          <li>
+            <a href="forms-editors.html">
+              <i class="bi bi-circle"></i><span>Form Editors</span>
+            </a>
+          </li>
+          <li>
+            <a href="forms-validation.html">
+              <i class="bi bi-circle"></i><span>Form Validation</span>
+            </a>
+          </li>
+
+        </ul>
+      </li><!--End Forms Nav -->
+      <li class="nav-item mb-1">
+        <a class="nav-link collapsed" data-bs-target="#table-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-layout-text-window-reverse"></i>
+          <span>Tables</span>
+          <i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="table-nav" class="nav-content collapse-nav " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="tables-general.html">
+              <i class="bi bi-circle"></i><span>General Tables</span>
+            </a>
+          </li>
+          <li>
+            <a href="tables-data.html">
+              <i class="bi bi-circle"></i><span>Data Tables</span>
+            </a>
+          </li>
+
+        </ul>
+      </li><!--End Tables Nav -->
+      <li class="nav-item mb-1">
+        <a href="#" class="nav-link collapsed" data-bs-target="#chart-nav" data-bs-toggle="collapse">
+          <i class="bi bi-bar-chart"></i>
+          <span>Charts</span>
+          <i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="chart-nav" class="nav-content collapse-nav" data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="charts-chartjs.html">
+              <i class="bi bi-circle"></i><span>Charts.js</span>
+            </a>
+          </li>
+          <li>
+            <a href="charts-apexcharts.html">
+              <i class="bi bi-circle"></i><span>Apex Charts</span>
+            </a>
+          </li>
+          <li>
+            <a href="charts-echarts.html">
+              <i class="bi bi-circle"></i><span>ECharts</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <!-- End of Charts -->
+      <li class="nav-item mb-1">
+        <a href="#" class="nav-link collapsed" data-bs-target="#gem-nav" data-bs-toggle="collapse">
+          <i class="bi bi-gem"></i>
+          <span>Icons</span>
+          <i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="gem-nav" class="nav-content collapse-nav" data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="icons-bootstrap.html">
+              <i class="bi bi-circle"></i><span>bootstrap Icons</span>
+            </a>
+          </li>
+          <li>
+            <a href="icons-remix.html">
+              <i class="bi bi-circle"></i><span>Remix Icons</span>
+            </a>
+          </li>
+          <li>
+            <a href="icons-boxicons.html">
+              <i class="bi bi-circle"></i><span>Box Icons</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <!-- End of icons -->
+      <li class="nav-heading">Pages</li>
+      <!-- End of Pages -->
+      <li class="nav-item mb-1">
+        <a href="profile.html" class="nav-link collapsed">
+          <i class="bi bi-person"></i>
+          <span>Profile</span>
+        </a>
+      </li>
+      <!-- End of Profile -->
+      <li class="nav-item mb-1">
+        <a href="pages-faq.html" class="nav-link collapsed">
+          <i class="bi bi-question-circle"></i>
+          <span>F.A.Q</span>
+        </a>
+      </li>
+      <!-- End of FAQ -->
+      <li class="nav-item mb-1">
+        <a href="pages-contact.html" class="nav-link collapsed" >
+          <i class="bi bi-envelope"></i>
+          <span>Contact</span>
+        </a>
+      </li>
+      <!-- end of contact -->
+      <li class="nav-item mb-1">
+        <a href="pages-register.html" class="nav-link collapsed">
+          <i class="bi bi-card-list"></i>
+          <span>Register</span>
+        </a>
+      </li>
+      <!-- End of Register -->
+      <li class="nav-item mb-1">
+        <a href="pages-login.html" class="nav-link collapsed">
+          <i class="bi bi-box-arrow-in-right"></i>
+          <span>Login</span>
+        </a>
+      </li>
+      <!-- End of Login -->
+      <li class="nav-item mb-1">
+        <a href="pages-error-404.html" class="nav-link collapsed">
+          <i class="bi bi-dash-circle"></i>
+          <span>Error 404</span>
+        </a>
+      </li>
+      <!-- End of error404 -->
+      <li class="nav-item mb-1">
+        <a href="pages-blank.html" class="nav-link collapsed">
+          <i class="bi bi-file-earmark"></i>
+          <span>Blank</span>
+        </a>
+      </li>
+      <!-- End of Blank -->
+    </ul>
+
+  </aside>
+  <!--  ======== SideBar End ============ -->
+  <!--  ======== Main Start ============ -->
+  <main id="main" class="main">
+    <div class="pagetitle mb-3">
+      <h1>Badges</h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="#">Home</a>
+          </li>
+          <li class="breadcrumb-item ">
+            Components
+          </li>
+          <li class="breadcrumb-item active">
+            Badges
+          </li>
+        </ol>
+      </nav>
+    </div>
+    <!-- End of Title Page -->
+    <section class="section ">
+      <div class="row">
+        <!-- left section -->
+        <div class="col-lg-6">
+          <!-- of Default Badges -->
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Default Badges</h5>
+              <span class="badge bg-primary">Primary</span>
+              <span class="badge bg-secondary">Secondary</span>
+              <span class="badge bg-success">Success</span>
+              <span class="badge bg-danger">Danger</span>
+              <span class="badge bg-warning text-dark">Warning</span>
+              <span class="badge bg-info text-dark">Info</span>
+              <span class="badge bg-light text-dark">Light</span>
+              <span class="badge bg-dark">Dark</span>
+            </div>
+          </div>
+          <!-- End of Default Badges -->
+          <!-- Pill Badeges -->
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Pill Badges</h5>
+              <span class="badge badge-pill bg-primary">Primary</span>
+              <span class="badge badge-pill bg-secondary">Secondary</span>
+              <span class="badge badge-pill bg-success">Success</span>
+              <span class="badge badge-pill bg-danger">Danger</span>
+              <span class="badge badge-pill bg-warning">Warning</span>
+              <span class="badge badge-pill bg-info">Info</span>
+              <span class="badge badge-pill bg-light">Light</span>
+              <span class="badge badge-pill bg-dark">Dark</span>
+            </div>
+          </div>
+          <!-- End of pill Badges -->
+          <!-- Icons Badeges -->
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Icon Badges</h5>
+              <div class="icons-setting d-flex flex-wrap justify-content-flex-start ">
+              <span class="badge bg-primary d-flex align-items-center mb-1 me-1">
+                <i class="bi bi-star me-1   icon_reset "></i>Primary
+              </span>
+              <span class="badge  bg-secondary d-flex align-items-center mb-1 me-1">
+                <i class="bi bi-collection me-1 icon_reset"></i>
+                Secondary</span>
+              <span class="badge  bg-success d-flex align-items-center mb-1 me-1">
+                <i class="bi bi-check-circle me-1 icon_reset"></i>
+                Success</span>
+              <span class="badge  bg-danger d-flex align-items-center mb-1 me-1">
+                <i class="bi bi-exclamation-octagon me-1 icon_reset" ></i>
+                Danger</span>
+              <span class="badge  bg-warning d-flex align-items-center mb-1 me-1">
+                <i class="bi bi-exclamation-triangle me-1 icon_reset"></i>
+                Warning</span>
+              <span class="badge  bg-info d-flex align-items-center mb-1 me-1">
+                <i class="bi bi-info-circle me-1 icon_reset"></i>
+                Info</span>
+              <span class="badge  bg-light d-flex align-items-center mb-1 me-1">
+                <i class="bi bi-star me-1 icon_reset"></i>
+                Light</span>
+              <span class="badge  bg-dark d-flex align-items-center mb-1 me-1">
+                <i class="bi bi-folder me-1 icon_reset"></i>
+                Dark</span>
+              </div>
+            </div>
+          </div>
+          <!-- Icons of pill Badges -->
+        </div>
+        <!-- End of left Section -->
+        <!-- right section -->
+        <div class="col-lg-6">
+<!-- Border Badeges -->
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Border Badges</h5>
+    <span class="badge border border-primary text-primary ">Primary</span>
+    <span class="badge  border border-secondary text-secondary">Secondary</span>
+    <span class="badge border border-success text-success">Success</span>
+    <span class="badge border border-danger text-danger">Danger</span>
+    <span class="badge  border border-warning text-warning">Warning</span>
+    <span class="badge  border border-info text-info">Info</span>
+    <span class="badge border border-light text-light">Light</span>
+    <span class="badge  border border-dark text-dark">Dark</span>
+  </div>
+</div>
+<!-- End of border Badges -->
+<!-- Button Badeges -->
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Button Badges</h5>
+    <button type="button" class="btn btn-primary  mb-1">
+      Primary <span class="badge bg-white text-primary">4</span>
+    </button>
+    <button type="button" class="btn btn-secondary mb-1">
+      Secondary <span class="badge bg-white text-secondary">4</span>
+    </button>
+    <button type="button" class="btn btn-success mb-1">
+      Success <span class="badge bg-white text-success">4</span>
+    </button>
+    <button type="button" class="btn btn-danger mb-1">
+      Danger <span class="badge bg-white text-danger">4</span>
+    </button>
+    <button type="button" class="btn btn-warning">
+      Warning <span class="badge bg-white text-warning">4</span>
+    </button>
+    <button type="button" class="btn btn-info">
+      Info <span class="badge bg-white text-info">4</span>
+    </button>
+    <button type="button" class="btn btn-light">
+      Light <span class="badge bg-white text-light">4</span>
+    </button>
+    <button type="button" class="btn btn-dark">
+      Dark <span class="badge bg-white text-dark">4</span>
+    </button>
+  </div>
+</div>
+<!-- End of Button Badges -->
+
+<!-- Heading Badeges -->
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Button Badges</h5>
+    <h1>Example heading <span class="badge bg-primary">Primary</span></h1>
+<h2>Example heading <span class="badge bg-secondary">Secondary</span></h2>
+<h3>Example heading <span class="badge bg-success">Success</span></h3>
+<h4>Example heading <span class="badge bg-danger">Danger</span></h4>
+<h5>Example heading <span class="badge bg-warning">Warning</span></h5>
+<h6>Example heading <span class="badge bg-info">Info</span></h6>
+  </div>
+</div>
+<!-- End of Heading Badges -->
+        </div>
+        
+        <!-- End of right -->
+      </div>
+
+
+      </div>
+      </div>
+      </div>
+    </section>
+
+  </main>
+  <!-- End of Main -->
+  <!--  Footer -->
+  <footer class="footer" id="footer">
+    <div class="copyright">
+      &copy; Copyright
+      <strong><span>NiceAdmin</span></strong>
+      All Rights Reserved
+    </div>
+    <div class="credits">
+      Designed by
+      <a href="#">CodeWithRaees</a>
+    </div>
+  </footer>
+  <!-- End of Footer -->
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center active">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+  <!-- Vendor JS Files -->
+  <script src="./vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="./vendor/chart.js/chart.umd.js"></script>
+  <script src="./vendor/echarts/echarts.min.js"></script>
+
+  <!-- <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="./vendor/quill/quill.min.js"></script>
+<script src="./vendor/simple-datatables/simple-datatables.js"></script>
+<script src="./vendor/tinymce/tinymce.min.js"></script>
+<script src="./vendor/php-email-form/validate.js"></script> -->
+
+  <!-- Template Main JS File -->
+  <script src="./js/main.js"></script>
+  <script src="./js/test.js"></script>
+
+</body>
+
+</html>
